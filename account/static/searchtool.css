@@ -1,0 +1,37 @@
+.container-fluid {
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+}
+
+.pf-top-srch {
+    width: 400px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #E2E2E2;
+ 
+}
+.fixed {
+    padding-left: 3%;
+}
+/* .pf-top-srch input {
+    border : 5px solid transparent;
+    border-bottom: 1px solid #000; 
+    color: #333;
+} */
+
+.collapse-navbar-collapse {
+    margin-right: 5%;
+}
+
+
+
+
+  
+
+
+
+
+
+

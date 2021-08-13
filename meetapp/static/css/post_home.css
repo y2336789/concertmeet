@@ -1,0 +1,176 @@
+/* 공통 */
+section {
+  width: 90%;
+  height: auto;
+  padding: 20px 0 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.metadata {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  border-bottom: solid 2px black;
+  padding-bottom: 5px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+/* 콘서트 */
+.home_list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
+}
+
+.home_concert {
+  width: 300px;
+}
+
+.home_concert:nth-child(n + 5) {
+  display: none;
+}
+
+.home_concert_info {
+  text-align: center;
+}
+
+.home_concert_info img {
+  margin-bottom: 20px;
+  width: 130px;
+  height: 200px;
+}
+
+.home_concert_info div {
+  padding-top: 3px;
+}
+
+/* 인기글 */
+.popular_list table {
+  width: 90%; 
+  padding: 10px 0; 
+  margin: 0 auto; 
+  table-layout: fixed;
+}
+.popular_list table tr {
+  width: 100%; 
+  padding: 3px 0; 
+  border-bottom: solid 1px black;
+}
+.popular_list table tr:last-child {
+  border: none;
+}
+.popular_list table tr th {
+  padding: 3px 0;
+}
+.popular_list table tr td p {
+  display: block; 
+  white-space: nowrap; 
+  overflow: hidden; text-overflow: 
+  ellipsis; width: 100%;
+}
+.popular_list table tr td .pop_link:hover {
+  color: rgb(165, 165, 103); 
+  transition: all 0.2s ease-out;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  column-gap: 2%;
+  padding: 1rem;
+}
+.card-item {
+  margin-bottom: 1rem;
+  background: turquoise;
+}
+.card-image {
+  height: 0;
+  padding-bottom: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: lightgray;
+  background-size: cover;
+}
+.card-image img {
+  display: none;
+}
+.card-desc {
+  padding: 1em;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1920px) {
+  section {
+    max-width: 1480px;
+  }
+}
+
+@media (max-width: 1680px) {
+  section {
+    max-width: 1180px;
+  }
+}
+
+
+@media (max-width: 1152px) {
+  section {
+    max-width: 852px;
+  }
+  .home_concert:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+/* 1024 x 768 */
+@media (max-width: 1024px) {
+  #main {
+    height: 29rem;
+  }
+}
+
+/* 800 x 600 */
+@media (max-width: 800px) {
+  
+  .today_concert {
+    max-width: 650px;
+  }
+  .concert_mate {
+    max-width: 650px;
+  }
+  .home_concert:nth-child(n + 3) {
+    display: none;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 420px){
+  .today_concert{ 
+    max-width: 350px;
+  }
+  .title{
+    font-size: 12px;
+  }
+  .home_concert_info img {
+    width: 75px;
+    height: 110px;
+  }
+  .home_concert_info {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 2175px) {
+  section{
+    max-width: 2060px;
+  }
+}
